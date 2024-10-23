@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export function Headline(props) {
-    console.log(props.title);
     return (
         <>
             <Image
@@ -24,7 +23,7 @@ export function Headline(props) {
                 </code>
                     .
                 </li>
-                <li>Save and see your changes instantly.</li>
+                {props.children}
             </ol>
         </>
     );
