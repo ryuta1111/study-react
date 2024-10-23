@@ -1,5 +1,4 @@
 import Image from "next/image";
-import localFont from "next/font/local";
 
 export function Footer() {
     return (

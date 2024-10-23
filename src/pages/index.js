@@ -1,4 +1,3 @@
-import Image from "next/image";
 import localFont from "next/font/local";
 import { Footer } from "../components/Footer";
 import { Main } from "@/components/Main";

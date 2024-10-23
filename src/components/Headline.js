@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import classes from "./Headline.module.css";
 
 export function Headline(props) {
     return (
@@ -13,7 +13,7 @@ export function Headline(props) {
                 priority
             />
 
-            <h1 className={styles.title}>{props.page} page</h1>
+            <h3 className={classes.title}>{props.page} page</h3>
 
             <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
                 <li className="mb-2">
