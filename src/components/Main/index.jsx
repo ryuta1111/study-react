@@ -9,7 +9,7 @@ export function Main(props) {
         >
             <li>Save and see your changes instantly.</li>
         </Headline>
-        <Links />
+        <Links/>
         </main>
     );
 }
