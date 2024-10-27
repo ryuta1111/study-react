@@ -1,34 +1,23 @@
-// import localFont from "next/font/local";
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
 import { Footer } from "@/components/Footer";
 import { Main } from "@/components/Main";
 import { Header } from "@/components/Header";
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import { useCounter } from "@/hooks/useCounter";
-import { useInputArray } from "@/hooks/useInputArray";
-import { useBgChange } from "@/hooks/useBgChange";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
-export default function Home() {
-  const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleChange, handleAdd } = useInputArray();
-  useBgChange();
+export default function Home(props) {
+  const {
+    count,
+    isShow,
+    handleClick,
+    handleDisplay,
+    text,
+    array,
+    handleChange,
+    handleAdd
+  } = props;
 
   return (
-    <div
-      className={styles.container}
-      // className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
+    <div className={styles.container}>
       <Head>
         <title>Index Page</title>
       </Head>
