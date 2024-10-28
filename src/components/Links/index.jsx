@@ -1,11 +1,11 @@
 import classes from "@/components/Links/Links.module.css"
 
-export function Links({ items }) {
+export const Links = (props) => {
     return (
         <div className={classes.grid}
         //  className="flex gap-4 items-center flex-col sm:flex-row"
         >
-            {items.map((item) => {
+            {props.items.map((item) => {
                 return (
                     <div key={item.href}>
                         <a  href={item.href} className={item.class}>
